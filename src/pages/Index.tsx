@@ -100,9 +100,9 @@ const Index = () => {
                   <div className="w-24 h-24 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Stethoscope className="h-12 w-12 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl">Dr. Sarah Johnson</CardTitle>
+                  <CardTitle className="text-2xl">Dr. Awais Raza</CardTitle>
                   <CardDescription>
-                    Board Certified Internal Medicine Physician
+                    Board Certified Docotor of Medicine
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
@@ -110,8 +110,8 @@ const Index = () => {
                     "Committed to bridging the gap between complex medical research and practical patient care through accessible, evidence-based content."
                   </p>
                   <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
-                    <span>• MD, Johns Hopkins</span>
-                    <span>• 15+ Years Experience</span>
+                    <span>• layyah, Pakistan</span>
+                    <span>• 3+ Years Experience</span>
                   </div>
                 </CardContent>
               </Card>
