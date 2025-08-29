@@ -43,7 +43,7 @@ export const Navbar = () => {
             </div>
             <div className="hidden sm:block">
               <span className="text-xl font-bold text-foreground">MedBlog</span>
-              <p className="text-xs text-muted-foreground">Dr. Sarah Johnson</p>
+              <p className="text-xs text-muted-foreground">Dr. Awais Raza</p>
             </div>
           </Link>
 
