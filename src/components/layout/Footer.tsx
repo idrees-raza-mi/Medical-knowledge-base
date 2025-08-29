@@ -15,7 +15,7 @@ export const Footer = () => {
               </div>
               <div>
                 <span className="text-xl font-bold text-foreground">MedBlog</span>
-                <p className="text-xs text-muted-foreground">Dr. Sarah Johnson</p>
+                <p className="text-xs text-muted-foreground">Dr. Awais Raza</p>
               </div>
             </Link>
             <p className="text-sm text-muted-foreground">
@@ -97,7 +97,7 @@ export const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>dr.sarah@medblog.com</span>
+                <span>dr.awais@medblog.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -105,7 +105,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>New York, NY</span>
+                <span>Pakistan, Layyah</span>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export const Footer = () => {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 MedBlog by Dr. Sarah Johnson. All rights reserved.
+            © 2024 MedBlog by Dr. Awais Raza. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
