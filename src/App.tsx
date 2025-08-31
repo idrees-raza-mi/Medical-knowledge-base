@@ -13,6 +13,7 @@ import Blogs from "./pages/Blogs";
 import Categories from "./pages/Categories";
 import HotTopics from "./pages/HotTopics";
 import FAQ from "./pages/FAQ";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
                   <Route path="/categories" element={<Categories />} />
                   <Route path="/hot-topics" element={<HotTopics />} />
                   <Route path="/faq" element={<FAQ />} />
+                  <Route path="/admin" element={<Admin />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

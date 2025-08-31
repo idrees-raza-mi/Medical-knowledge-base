@@ -6,8 +6,9 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { supabase } from '@/integrations/supabase/client';
-import { Search, Clock, Eye, Heart, ArrowRight, Filter } from 'lucide-react';
+import { Search, Clock, Eye, Heart, Filter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import BlogPreview from '@/components/BlogPreview';
 
 interface BlogPost {
   id: string;
@@ -20,6 +21,7 @@ interface BlogPost {
   views: number;
   likes: number;
   created_at: string;
+  content: string;
   profiles: {
     display_name: string;
   };
@@ -46,6 +48,7 @@ const Blogs = () => {
           title,
           slug,
           excerpt,
+          content,
           featured_image,
           category,
           tags,
@@ -215,12 +218,7 @@ const Blogs = () => {
                     {new Date(post.created_at).toLocaleDateString()}
                   </div>
                 </div>
-                <Button variant="ghost" size="sm" asChild className="group-hover:text-primary">
-                  <Link to={`/blog/${post.slug}`}>
-                    Read More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                <BlogPreview post={post} />
               </div>
               
               {post.tags.length > 0 && (
